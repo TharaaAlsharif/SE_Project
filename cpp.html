@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>حسابي</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <a id="logo" href="index.html"><img src="images/logo.png" alt="logo" width="150" height="100"></a>
+  <nav>
+    <a href="index.html">الصفحة الرئيسية</a>
+    <a href="about.html">عن مدين</a>
+    <a href="orderProc.html">طريقة الطلب</a>
+    <a href="faq.html">الاسئلة الشائعة</a>
+    <a href="cpp.html"><i class="fa fa-fw fa-user"></i> حسابي</a>
+  </nav>
+
+  <form id="profile" action="cpp.html" method="post">
+    <legend class="heading"><strong>الملف الشخصي</strong></legend>
+    <div class="row">
+      <div class="col-1">
+        <label for="username"> اسم المستخدم</label>
+      </div>
+      <div class="col-2">
+        <input type="text" name="usernamr" id="username" disabled>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-1">
+        <label for="usermobile"> رقم الهاتف</label>
+      </div>
+      <div class="col-2">
+        <input type="tel" name="usermobile" id="usermobile" disabled>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1">
+        <label for="email"> البريد الالكتروني</label>
+      </div>
+      <div class="col-2">
+        <input type="email" name="email" id="email" disabled>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1">
+        <label for="card"> رقم البطاقة البنكية</label>
+      </div>
+      <div class="col-2">
+        <input type="text" name="card" id="card" disabled>
+      </div>
+    </div>
+    <div class="row col-3">
+       <input class="button" type="submit" name="save" value="حفظ" disabled> <button class="button" type="button" name="edit" onclick="edit_func()">تعديل</button>
+    </div>
+  </form>
+
+  <div class="orderProc">
+    <h3>حالة الطلب</h3>
+    <div class="order" id="check">
+      <p> :رقم الطلب</p>
+      <p> :المبلغ المدفوع</p>
+      <p> :المبلغ المتبقي</p>
+      <progress value="0" max="100">0%</progress>
+    </div>
+    <a href="ordering.html"><button class="button ordaring" type="button" name="ordering" >تقدّم الآن</button></a>
+  </div>
+
+  <footer>
+    <small>جميع الحقوق محفوظة 2021</small><br>
+    <a href="contactUs.html">تواصل معنا</a>
+    <a href="faq.html">الاسئلة الشائعة</a>
+  </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

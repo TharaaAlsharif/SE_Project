@@ -1,0 +1,356 @@
+body{
+  background-image: url(background.png);
+  background-size: cover;
+  font-family: 'Tajawal', sans-serif;
+
+}
+
+#logo{
+  float: right;
+}
+
+nav,footer{
+  color: #707070;
+  text-align: center;
+}
+ nav a,footer a{
+   font-size: 1.063em;
+   color: #279F8A;
+   padding: 1em 2em;
+ }
+ nav{
+   border: 0.06em solid #707070;
+   border-radius: 3em;
+   width: 80%;
+   float: right;
+   margin:1.5em  2em;
+ }
+
+ footer{
+   padding-top: 21em;
+ }
+
+nav a {
+  text-decoration: none;
+  float: right;
+  padding: 1em 3em;
+}
+nav a:hover, footer a:hover {
+  color: #1B6F60;
+}
+
+
+.button{
+  font-size: 1em;
+  background-color: #279F8A;
+  border: none;
+  border-radius:3em;
+  box-shadow: 0.06em 0.06em #D7D7D7;
+  padding: 0.625em 2em;
+}
+.button:hover{
+  background-color: #1B6F60;
+}
+.button:disabled{
+  background-color: #96c6bf;
+}
+
+.heading {
+  color: #279F8A;
+  padding:7em 1em 0 0;
+  font-size: 1.5em;
+  text-align: right;
+}
+
+.intro p{
+    max-width: 40ch ;
+    text-align: center;
+    font-size: 1.6em;
+    padding-left: 30em;
+    margin-top: 70px;
+    color: #279F8A;
+}
+.intro h1{
+  margin-top: 200px;
+  font-size: 2.5em;
+  text-decoration-line: underline ;
+  text-align: right;
+  padding: 0em 6em;
+}
+
+.sign-form{
+    border: 0.063em solid #279F8A;
+    text-align: center;
+    border-radius: 2em;
+    padding: 1.5em 1em;
+    float: left;
+    margin: 1em 15em 4em;
+    box-shadow: 1px 1px #D7D7D7;
+}
+
+.sign-form:hover{
+      box-shadow: 5px 5px #279F8A;
+
+}
+
+.sign-form form{
+    text-align: right ;
+    line-height: 2;
+    padding-right: 3em;
+
+
+}
+
+.sign-form img{
+  margin-bottom: 2em ;
+}
+
+
+
+.sign-form form input[type=text],input[type=password]{
+  width: 90%;
+  padding: 0.75em;
+  border: 0.063em solid #279F8A;
+  border-radius: 1em;
+  font-size: 0.8em;
+  text-align: right;
+  box-shadow: 1px 1px;
+}
+
+
+.sign-form form input[type=button],input[type=submit]{
+    margin: 10px;
+    border-radius: 3em;
+    font-size: 1em;
+    padding: 0.3em 2em ;
+    background-color: #279F8A;
+    border: none;
+    box-shadow: 0.06em 0.06em #D7D7D7;
+    padding: 0.625em 2em;
+}
+
+.sign-form form input[type=submit]:hover{
+  background-color: #1B6F60;
+  cursor: pointer;
+}
+
+table{
+    margin: auto;
+}
+table td {
+    margin: 2em 20em;
+    padding: 2em;
+
+}
+.order-card {
+  clear: both;
+  box-shadow: 6px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  max-width: 20em;
+  height: 19em;
+  text-align: right;
+  border-radius: 2em;
+  padding-right: 1em;
+  line-height: 0.7;
+  background-color: white;
+}
+
+.order-card:hover{
+    box-shadow: 10px 10px  #D7D7D7 ;
+    cursor: pointer;
+}
+.order-card img{
+    margin: 0.5em 0.5em -0.5em;
+    height: 10em;
+
+}
+
+.order-card .agree{
+    background: none;
+    border: none;
+    border-top: solid 1px ;
+    font-size: 1.2em;
+    margin: 0 10em 1em 5em ;
+    font-family: 'Tajawal', sans-serif;
+    color: #279F8A;
+    border-color:#279F8A;
+}
+
+.order-card .agree:hover{
+    color: #1B6F60;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* order detail*/
+.order-details h1{
+    text-align: center;
+    font-size: 3em ;
+    color: #279F8A;
+}
+
+/*cpp style*/
+.row{
+  padding-right: 2em;
+}
+input[type=text],input[type=tel],input[type=email],input[type=password]{ /*Password  "crate account page + diriction to writ*/
+  width: 40%;
+  padding: 0.75em;
+  border: 0.063em solid #279F8A;
+  border-radius: 0.75em;
+  direction: rtl;
+}
+
+
+.col-1 {
+  float: right;
+  text-align: right;
+  width: 15%;
+  margin-top: 0.75em;
+  display: inline-block;
+}
+
+.col-2 {
+  float: right;
+  text-align: right;
+  width: 75%;
+  margin-top: 0.375em;
+}
+.col-3{
+  float: right;
+  width: 75%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.orderProc{
+  padding: 4em 2em 0 0;
+  text-align: right;
+}
+.order{
+  width: 16%;
+  float: right;
+  padding: 1em 2em 3em 0;
+  margin: 0 0 2em 100em;
+  background-color: #FFFFFF;
+  border: 0.06em solid #707070;
+  border-radius: 3em;
+}
+progress{
+  height: 2em;
+}
+.orderProc button{
+  float: left;
+  margin: 0 0 0 6em;
+}
+
+/*create account css */
+
+.card-heading{
+  color: #279F8A;
+  padding:0.75em 1em 0 0;
+  font-size: 1em;
+  text-align: right;
+}
+
+input[type="tel"]::placeholder {
+  text-align: left;
+}
+
+input[type="text"]::placeholder {
+  text-align: center;
+}
+
+fieldset{
+  border: 0;
+}
+.card-row{
+  display: block;
+}
+
+.card-col2{
+  float: right;
+  width: 10% !important;
+  margin-top: 0.75em;
+  margin-left: 0.75em;
+  margin-right: 3em;
+}
+
+.card-col1{
+  float: right;
+  width: 30% !important;
+  margin-top: 0.75em;
+  margin-left: 40em;
+}
+
+#passmessage{
+  float: left;
+  margin-left: 20em;
+}
+#usermsg,#idmsg,
+#phonemsg,#passmsg,
+#confmessage {
+  float: left;
+  margin-left: 31em;
+  color: red;
+}
+/*card msg */
+#cardmsg{
+  float: right;
+  color: red;
+  font-size: 100%;
+}
+
+.creat-acc-footer{
+  padding-top: 5em !important;
+}
+
+/*About page */
+.about-heading-1{
+  color: #363636;
+  padding:5em 3em 0 0;
+  font-size: 2.2em;
+  text-align: right;
+  text-decoration: underline #64ccbbc0;
+}
+.about-heading-2{
+  color: #363636;
+  padding-top: 4em;
+  font-size: 2.2em;
+  text-align:center;
+  text-decoration: underline #64ccbbc0;
+}
+.top-p{
+  float: right;
+  margin-right: 2em;
+  font-size: 1.3em;
+  color: #525050bd;
+  font-family: 'Tajawal', sans-serif;
+}
+
+.bottom-Table{
+  border-collapse: separate;
+  border-spacing: 25px 0;
+  position: absolute;
+    top: 480px;
+    left: 350px;
+    right: 250px;
+
+}
+
+.r1-col{
+  font-size: x-large;
+  color: #1B6F60;
+}
+.r2-col{
+  font-size: small;
+  text-align: center;
+}
+
+
+
+.about-footer{
+  padding-top: 10em !important;
+}

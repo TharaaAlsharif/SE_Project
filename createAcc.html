@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>إنشاء حساب</title>
+        <script type="text/javascript" src="js/index.js"></script>
+        <link rel="icon" href="images/logo.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <a id="logo" href="index.html"><img src="images\logo.png" alt="logo" width="150" height="100"></a>
+        <nav>
+            <a href="index.html">الصفحة الرئيسية</a>
+            <a href="about.html">عن مدين</a>
+            <a href="orderProc.html">طريقة الطلب</a>
+            <a href="faq.html">الاسئلة الشائعة</a>
+            <a href="dpp.html"><i class="fa fa-fw fa-user"></i> حسابي</a>
+          </nav>
+
+          <h1 class="heading"><strong>إنشاء حساب</strong></h1>
+          <form id= "creatAcc" method="post" action="">
+              <fieldset>
+                <!--User name-->
+                <div class="row">
+                    <div class="col-1">
+                        <label for = "username">: إسم المستخدم </label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" name="username" id="username" placeholder="أدخل إسم المستخدم الرباعي" required  onkeyup='checkname();'/>
+                        <span id="usermsg">*</span>
+                    </div>
+                </div>
+                <!--National ID -->
+                <div class="row">
+                    <div class="col-1">
+                        <label for = "nationalId">: الهوية الوطنية </label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" name="nationalId" id="nationalId"  required  onkeypress="return isNumberKey(event);" onkeyup='checkId();'/>
+                        <span id="idmsg">*</span>
+                    </div>
+                </div>
+                <!-- Password -->
+                <div class="row">
+                    <div class="col-1">
+                        <label for = "password">: كلمة المرور  </label>
+                    </div>
+                    <div class="col-2">
+                        <input type="password" name="password" id="password"  required  onkeyup='checkpass();' />
+                        <span id='passmessage'></span>
+                        <span id='passmsg'>*</span>
+                    </div>
+                </div>
+                <!-- Confirm password -->
+                <div class="row">
+                    <div class="col-1">
+                        <label for = "password">: تأكيد كلمة المرور  </label>
+                    </div>
+                    <div class="col-2">
+                        <input type="password" name="confirm_password" id="confirm_password"  required  onkeyup='checkpass();' />
+                        <span id='confmessage'>*</span>
+                    </div>
+                </div>
+                <!-- Phone number -->
+                <div class="row">
+                    <div class="col-1">
+                        <label for = "phone-number">: رقم الهاتف  </label>
+                    </div>
+                    <div class="col-2">
+                        <input type="tel" name="phone-number" id="phone-number" required  placeholder="966-5000-0000" onkeypress="return isNumberKey(event);" onkeyup='checkPhone();'/>
+                        <span id="phonemsg">*</span>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                 <!-- Card info -->
+                 <div id="card-info">
+                     <span id="cardmsg"><strong>*</strong></span>
+                     <h2 class="card-heading"><strong> : معلومات البطاقة البنكية </strong></h2>
+                 </div>
+
+               <div class="card-row">
+
+                   <!--Card Exp Date -->
+                   <input type="text" class="card-col2" name="card-exp"  id="card-exp" placeholder="تاريخ صلاحية البطاقة" required  onkeypress="return isNumberKey(event);" onkeyup='checkCard();'/>
+                   <!--Card Name-->
+                       <input type="text" class="card-col1" name="card-name" id="card-name" placeholder="الأسم المسجل على البطاقة" required onkeyup='checkCard();' />
+                    </div>
+
+               <div class="card-row">
+                   <!--Card CVC -->
+                   <input type="text" class="card-col2" name="cvc" id="cvc" placeholder="رمز الامان" required  onkeypress="return isNumberKey(event);" onkeyup='checkCard();'/>
+                    <!--Card Number -->
+                       <input type="text" class="card-col1" name="card-number" id="card-number"  placeholder="رقم البطاقة" required  onkeypress="return isNumberKey(event);" onkeyup='checkCard();'/>
+                </div>
+
+            </fieldset>
+            <div class="row col-3">
+                <input class="button" id="submitc" type="submit" name="save" value="تسجيل كمدين" onclick="window.location.href = 'orderProc.html';"  >
+                <input class="button" id="submitd" type="submit" name="save" value="تسجيل كدائن"  onclick="window.location.href = 'orderDetails.html';" >
+             </div>
+          </form>
+
+          <footer class="creat-acc-footer">
+            <small>جميع الحقوق محفوظة 2021</small><br>
+            <a href="contactUs.html">تواصل معنا</a>
+            <a href="faq.html">الاسئلة الشائعة</a>
+          </footer>
+    </body>
+</html>
