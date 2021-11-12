@@ -36,9 +36,7 @@ textarea{
 .buttonCon:hover{
   background-color: #1B6F60;
 }
-.buttonCon:disabled{
-  background-color: #96c6bf;
-}
+
 
 .footer{
    padding-top: 15em;
