@@ -83,3 +83,23 @@ function isNumberKey(evt){
   return !(charCode > 31 && (charCode < 48 || charCode > 57));
 }
 
+// Checking for ContactUs page
+document.getElementById("formCon").onsubmit=function() {checkCon()};
+
+function checkCon(){
+	
+	var email= document.getElementById('email').value;
+	var title= document.getElementById('title').value;
+	var content= document.getElementById('content').value;
+	
+	if(email == "" || title == "" || content == ""){
+		alert("رجاءًأدخل جميع الحقول");
+		return false;
+	}
+	else{
+		
+		alert("تم أستلام رسالتك بنجاح");
+		return true;
+	}
+}
+
