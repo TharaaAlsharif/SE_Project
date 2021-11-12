@@ -1,0 +1,97 @@
+.headingCon {
+  
+  padding:5em 1em 1em 0;
+  font-size: 1.9em;
+  text-align: right;
+  
+}
+
+
+.rows{
+  padding-bottom: 3em;
+}
+
+textarea{
+	
+  width: 60%;
+  height: 200px;
+  border: 0.063em solid #279F8A;
+  border-radius: 0.75em;
+	
+}
+
+.buttonCon{
+  
+  background-color: #279F8A;
+  border: none;
+  border-radius:3em;
+  box-shadow: 0.06em 0.06em #D7D7D7;
+  padding: 0.625em 2em;
+  font-size: 1.3em;
+  float: left;
+  margin: 20px 0 0 260px;
+  color:white;
+}
+
+.buttonCon:hover{
+  background-color: #1B6F60;
+}
+.buttonCon:disabled{
+  background-color: #96c6bf;
+}
+
+.footer{
+   padding-top: 15em;
+ }
+
+.box{
+	background-color: #fcfcfc;
+}
+
+.colFaq1{
+	
+  float: right;
+  text-align: right;
+  width: 30%;
+  margin-top: 0.75em;
+  margin-left: 12em;
+  margin-right: 2em;
+  
+}
+
+.colFaq2{
+	
+  float: right;
+  text-align: right;
+  width: 30%;
+  margin-top: 0.75em;
+  
+	
+}
+
+.headingFaq{
+  
+  color: #279F8A;
+  padding: 4em 0 0 1em;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+li{
+	color: #279F8A;
+	font-weight: bold;
+}
+
+.link{
+	color: #1B6F60;
+	font-size: large;
+	font-weight: bold;
+	float: left;
+	margin-left: 7em;
+}
+
+.link:hover{
+	
+	color: blue;
+	
+}
